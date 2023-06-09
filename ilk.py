@@ -1,9 +1,12 @@
-liste = ["Demhat","EmreS","EmreG","Durmus","Cevaplar"]
+liste = ["Demhat","EmreS","EmreG","Durmus","Cevaplar","Canberk"]
 import os
-filename = "outlier"
+filename = "MlModel"
 for item in liste:
-    # os.mkdir(f"/workspace/KordsaIntroML/Exercises/{item}")
-    open(f"Exercises/{item}/{filename}.ipynb","wb+")
+    try:
+        os.mkdir(f"/workspace/KordsaIntroML/Exercises/{item}")
+    except:
+        pass 
+    open(f"Exercises/{item}/{filename}.ipynb","ab+")
 
 
 
@@ -14,3 +17,4 @@ for item in liste:
 2  portakal     30      12
 3  mandalina    12      35
 """
+
