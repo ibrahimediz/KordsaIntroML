@@ -1,6 +1,6 @@
 liste = ["Demhat","EmreS","EmreG","Durmus","Cevaplar","Canberk"]
 import os
-filename = "MlModel"
+filename = "01_DeepLearning"
 for item in liste:
     try:
         os.mkdir(f"/workspace/KordsaIntroML/Exercises/{item}")
